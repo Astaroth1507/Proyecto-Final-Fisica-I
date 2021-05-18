@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://bootswatch.com/5/sketchy/bootstrap.min.css">
+
+    <title>ProyectoFisicaI</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Alexander</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Perfil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Conversiones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sumaVectores.html">Suma de vectores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="leyesNewton.html">Leyes de newton</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="container pt-4">
+        <div class="row">
+            <h1 class="col text-center text-success">CONVERSIONES DE LONGITUD</h1>
+        </div>
+        <form class="container">
+            <div class="row">
+                <div class="col m-4">
+                    <!-- De aqui -->
+                    <div class="input-group">
+                        <input type="number" class="form-control" id="inputMeters" placeholder="ingresar los metros" oninput="meters(this.value)" onchange="meters(this.value)">
+                        <div class="input-text-append">
+                            <div class="input-group-text">Metros</div>
+                        </div>
+                    </div>
+                    <!-- hasta aqui -->
+                </div>
+                <div class="col m-4">
+                    <div class="input-group">
+                        <input type="number" class="form-control" id="inputCm" placeholder="ingrese los centimetros" oninput="centimetro(this.value)" onchange="centimetro(this.value)">
+                        <div class="input-text-append">
+                            <div class="input-group-text">Centímetros</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col m-4">
+                        <div class="input-group">
+                            <input type="number" class="form-control" id="inputKm" placeholder="ingrese los Kilómetros" oninput="kilometros(this.value)" onchange="kilometros(this.value)">
+                            <div class="input-text-append">
+                                <div class="input-group-text">Kilómetros</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col m-4">
+                        <div class="input-group">
+                            <input type="number" class="form-control" id="inputMiles" placeholder="ingrese las millas" oninput="millas(this.value)" onchange="millas(this.value)">
+                            <div class="input-text-append">
+                                <div class="input-group-text">Millas</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col m-4">
+                        <div class="input-group">
+                            <input type="number" class="form-control" id="inputPulgadas" placeholder="ingrese las pulgadas" oninput="pulgadas(this.value)" onchange="pulgadas(this.value)">
+                            <div class="input-text-append">
+                                <div class="input-group-text">Pulgadas</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col m-4">
+                        <div class="input-group">
+                            <input type="number" class="form-control" id="inputFeet" placeholder="ingrese los pies" oninput="pies(this.value)" onchange="pies(this.value)">
+                            <div class="input-text-append">
+                                <div class="input-group-text">Pies</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </section>
+    <section class="container pt-4">
+        <div class="row">
+            <h1 class="col text-center text-success">CONVERSIONES DE MASA</h1>
+        </div>
+        <form class="container">
+            <div class="row">
+                <div class="col m-4">
+                    <!-- De aqui -->
+                    <div class="input-group">
+                        <input type="number" class="form-control" id="inputKilogramos" placeholder="ingrese los kilogramos" oninput="kilogramo(this.value)" onchange="kilogramo(this.value)">
+                        <div class="input-text-append">
+                            <div class="input-group-text">Kilogramo</div>
+                        </div>
+                    </div>
+                    <!-- hasta aqui -->
+                </div>
+                <div class="col m-4">
+                    <div class="input-group">
+                        <input type="number" class="form-control" id="inputGramo" placeholder="ingrese los gramos" oninput="gramo(this.value)" onchange="gramo(this.value)">
+                        <div class="input-text-append">
+                            <div class="input-group-text">Gramo</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col m-4">
+                        <div class="input-group">
+                            <input type="number" class="form-control" id="inputLibra" placeholder="Ingrese las libras" oninput="libra(this.value)" onchange="libra(this.value)">
+                            <div class="input-text-append">
+                                <div class="input-group-text">Libra</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col m-4">
+                        <div class="input-group">
+                            <input type="number" class="form-control" id="inputOnzas" placeholder="Ingrese las onzas" oninput="onzas(this.value)" onchange="onzas(this.value)">
+                            <div class="input-text-append">
+                                <div class="input-group-text">Onzas</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <section class="container pt-4">
+            <div class="row">
+                <h1 class="col text-center text-success">CONVERSIONES DE TIEMPO</h1>
+            </div>
+            <form class="container">
+                <div class="row">
+                    <div class="col m-4">
+                        <!-- De aqui -->
+                        <div class="input-group">
+                            <input type="number" class="form-control" id="inputSegundos" placeholder="ingrese los segundos" oninput="segundos(this.value)" onchange="segundos(this.value)">
+                            <div class="input-text-append">
+                                <div class="input-group-text">Segundos</div>
+                            </div>
+                        </div>
+                        <!-- hasta aqui -->
+                    </div>
+                    <div class="col m-4">
+                        <div class="input-group">
+                            <input type="number" class="form-control" id="inputMins" placeholder="Ingrese los minutos" oninput="minutos(this.value)" onchange="minutos(this.value)">
+                            <div class="input-text-append">
+                                <div class="input-group-text">Minutos</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col m-4">
+                            <div class="input-group">
+                                <input type="number" class="form-control" id="inputHoras" placeholder="Ingrese las horas" oninput="horas(this.value)" onchange="horas(this.value)">
+                                <div class="input-text-append">
+                                    <div class="input-group-text">Horas</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col m-4">
+                            <div class="input-group">
+                                <input type="number" class="form-control" id="inputDias" placeholder="ingrese los días" oninput="dias(this.value)" onchange="dias(this.value)">
+                                <div class="input-text-append">
+                                    <div class="input-group-text">Días</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-6 m-4">
+                            <div class="input-group offset-5">
+                                <input type="number" class="form-control" id="inputYear" placeholder="Ingrese los años" oninput="year(this.value)" onchange="year(this.value)">
+                                <div class="input-text-append">
+                                    <div class="input-group-text">Años</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+
+
+
+</body>
+<script src="conversiones.js"></script>
+
+</html>
