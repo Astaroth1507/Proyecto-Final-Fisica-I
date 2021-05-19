@@ -45,9 +45,20 @@
             <div class="row mb-4">
                 <div class="col row">
                     <h2 class="text-center">Vector uno</h2>
+                    <div class="input-group  mb-2">
+                        <div class="input-group-prepend">
+                            <label class="input-group-text" for="cuadranteV1">Elija el cuadrante del vector</label>
+                        </div>
+                        <select class="custom-select" id="cuadranteV1">
+                          <option value="1">x, y</option>
+                          <option value="2">-x, y</option>
+                          <option value="3">-x, -y</option>
+                          <option value="4">x, -y</option>
+                        </select>
+                    </div>
                     <div class="col">
                         <div class="input-group">
-                            <input type="number" class="form-control" placeholder="Ingrese la magnitud">
+                            <input type="number" class="form-control" placeholder="Ingrese la magnitud" id="magnitudV1">
                             <div class="input-group-append">
                                 <div class="input-group-text">Magnitud</div>
                             </div>
@@ -55,7 +66,7 @@
                     </div>
                     <div class="col">
                         <div class="input-group">
-                            <input type="number" class="form-control" placeholder="Ingrese los grados">
+                            <input type="number" class="form-control" placeholder="Ingrese los grados" id="gradoV1">
                             <div class="input-group-append">
                                 <div class="input-group-text">Grados</div>
                             </div>
@@ -64,9 +75,20 @@
                 </div>
                 <div class="col row">
                     <h2 class="text-center">Vector dos</h2>
+                    <div class="input-group  mb-2">
+                        <div class="input-group-prepend">
+                            <label class="input-group-text" for="cuadranteV2">Elija el cuadrante del vector</label>
+                        </div>
+                        <select class="custom-select" id="cuadranteV2">
+                          <option value="1">x, y</option>
+                          <option value="2">-x, y</option>
+                          <option value="3">-x, -y</option>
+                          <option value="4">x, -y</option>
+                        </select>
+                    </div>
                     <div class="col">
                         <div class="input-group">
-                            <input type="number" class="form-control" placeholder="Ingrese la magnitud">
+                            <input type="number" class="form-control" placeholder="Ingrese la magnitud" id="magnitudV2">
                             <div class="input-group-append">
                                 <div class="input-group-text">Magnitud</div>
                             </div>
@@ -74,7 +96,7 @@
                     </div>
                     <div class="col">
                         <div class="input-group">
-                            <input type="number" class="form-control" placeholder="Ingrese los grados">
+                            <input type="number" class="form-control" placeholder="Ingrese los grados" id="gradoV2">
                             <div class="input-group-append">
                                 <div class="input-group-text">Grados</div>
                             </div>
@@ -85,9 +107,20 @@
             <div class="row mb-4">
                 <div class="col row">
                     <h2 class="text-center">Vector tres</h2>
+                    <div class="input-group  mb-2">
+                        <div class="input-group-prepend">
+                            <label class="input-group-text" for="cuadranteV3">Elija el cuadrante del vector</label>
+                        </div>
+                        <select class="custom-select" id="cuadranteV3">
+                          <option value="1">x, y</option>
+                          <option value="2">-x, y</option>
+                          <option value="3">-x, -y</option>
+                          <option value="4">x, -y</option>
+                        </select>
+                    </div>
                     <div class="col">
                         <div class="input-group">
-                            <input type="number" class="form-control" placeholder="Ingrese la magnitud">
+                            <input type="number" class="form-control" placeholder="Ingrese la magnitud" id="magnitudV3">
                             <div class="input-group-append">
                                 <div class="input-group-text">Magnitud</div>
                             </div>
@@ -95,7 +128,7 @@
                     </div>
                     <div class="col">
                         <div class="input-group">
-                            <input type="number" class="form-control" placeholder="Ingrese los grados">
+                            <input type="number" class="form-control" placeholder="Ingrese los grados" id="gradoV3">
                             <div class="input-group-append">
                                 <div class="input-group-text">Grados</div>
                             </div>
@@ -104,9 +137,20 @@
                 </div>
                 <div class="col row">
                     <h2 class="text-center">Vector cuatro</h2>
+                    <div class="input-group  mb-2">
+                        <div class="input-group-prepend">
+                            <label class="input-group-text" for="cuadranteV4">Elija el cuadrante del vector</label>
+                        </div>
+                        <select class="custom-select" id="cuadranteV4">
+                          <option value="1">x, y</option>
+                          <option value="2">-x, y</option>
+                          <option value="3">-x, -y</option>
+                          <option value="4">x, -y</option>
+                        </select>
+                    </div>
                     <div class="col">
                         <div class="input-group">
-                            <input type="number" class="form-control" placeholder="Ingrese la magnitud">
+                            <input type="number" class="form-control" placeholder="Ingrese la magnitud" id="magnitudV4">
                             <div class="input-group-append">
                                 <div class="input-group-text">Magnitud</div>
                             </div>
@@ -114,7 +158,7 @@
                     </div>
                     <div class="col">
                         <div class="input-group">
-                            <input type="number" class="form-control" placeholder="Ingrese los grados">
+                            <input type="number" class="form-control" placeholder="Ingrese los grados" id="gradoV4">
                             <div class="input-group-append">
                                 <div class="input-group-text">Grados</div>
                             </div>
@@ -125,12 +169,15 @@
         </form>
         <div class="text-center">
             <button type="button" class="btn btn-outline-dark">limpiar</button>
-            <button type="button" class="btn btn-outline-dark">Calcular</button>
+            <button type="button" class="btn btn-outline-dark" id="calcular">Calcular</button>
         </div>
         <div id="vectorResultante">
 
         </div>
     </main>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="sumaVectores.js"></script>
 </body>
 
 </html>
