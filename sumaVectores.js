@@ -111,3 +111,6 @@ function respuestas(resultante, angulo) {
         `<span>R//${resultante}, ${angulo}</span>`
     )
 }
+$('#limpiar').click(function() {
+    $('input').val(0)
+})
