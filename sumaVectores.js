@@ -108,7 +108,8 @@ function formulaYresultante() {
 
 function respuestas(resultante, angulo) {
     $("#respuestas").html(
-        `<span>R//${resultante}, ${angulo}</span>`
+        `<span>R//${resultante}, ${angulo}</span>
+        <img src="https://latex.codecogs.com/svg.image?\\measuredangle&space;" title="\\measuredangle " />`
     )
 }
 $('#limpiar').click(function() {
