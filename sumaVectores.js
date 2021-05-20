@@ -93,23 +93,32 @@ $(calcular).click(function() {
 
 function formulasDVectore() {
     $("#descomposicionVectoresXY").html(
-        `<img src="https://latex.codecogs.com/svg.image?x=cos\\theta&space;(h)" title="x=cos\\theta (h)">
-        <img src="https://latex.codecogs.com/svg.image?y=sin\\theta&space;(h)" title="y=sin\\theta (h)">`
+        `<div class="col-6 text-end">
+        <img src="https://latex.codecogs.com/svg.image?x=cos\\theta&space;(h)" title="x=cos\\theta (h)">
+        </div>
+        <div class="col-6 text-start">
+        <img src="https://latex.codecogs.com/svg.image?y=sin\\theta&space;(h)" title="y=sin\\theta (h)">
+        </div>`
     )
 }
 
 function formulaYresultante() {
     $("#formulaResultantes").html(
-        `<img src="https://latex.codecogs.com/svg.image?R=&space;\\sqrt[2]{x^{2}&plus;y^{2}}" title="R= \\sqrt[2]{x^{2}+y^{2}}">
-
-        <img src="https://latex.codecogs.com/svg.image?\\theta&space;=&space;tan^{-1}(\\frac{y}{x})" title="\\theta = tan^{-1}(\\frac{y}{x})">`
+        `<div class="col-6 text-end">
+        <img src="https://latex.codecogs.com/svg.image?R=&space;\\sqrt[2]{x^{2}&plus;y^{2}}" title="R= \\sqrt[2]{x^{2}+y^{2}}">
+        </div>
+        <div class="col-6 text-start">
+        <img src="https://latex.codecogs.com/svg.image?\\theta&space;=&space;tan^{-1}(\\frac{y}{x})" title="\\theta = tan^{-1}(\\frac{y}{x})">
+        </div>`
     )
 }
 
 function respuestas(resultante, angulo) {
     $("#respuestas").html(
-        `<span>R//${resultante}, ${angulo}</span>
-        <img src="https://latex.codecogs.com/svg.image?\\measuredangle&space;" title="\\measuredangle " />`
+        `<div class="col-6 text-end"><span>R//${resultante},</span></div>
+        <div class="col-6 text-start"><span>${angulo}</span>
+        <img src="https://latex.codecogs.com/svg.image?\\measuredangle&space;" title="\\measuredangle " />
+        </div>`
     )
 }
 $('#limpiar').click(function() {
