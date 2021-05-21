@@ -57,6 +57,7 @@
                             <option value="2">Tb</option>
                             <option value="3">Ta</option>
                             <option value="4">W2</option>
+                            <option value="5">fuerza (polea)</option>
                         </select>
                     </div>
                     <div class="col">
@@ -95,6 +96,57 @@
             <button type="button" id="limpiar" class="btn btn-outline-dark" onclick="location.reload()">Limpiar</button>
             <button type="button" class="btn btn-outline-dark" id="calcular">Calcular</button>
         </div>
+        <div class="row mt-10">
+            <h1 class="col text-center text-success">Tercera ley de Newton</h1>
+        </div>
+        <form class="container">
+            <div class="row mb-4">
+                <div class="col row">
+                    <div class="input-group  mb-2">
+                        <div class="input-group-prepend">
+                            <label class="input-group-text" for="cuadranteV1">Elija la variable que desea encontrar</label>
+                        </div>
+                        <select class="custom-select" id="opcion">
+                            <option selected hidden>ver opciones</option>
+                            <option value="1">Fp</option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <div class="input-group">
+                            <input type="number" class="form-control" placeholder="Ingrese los el peso" id="pesoN3" value="0">
+                            <div class="input-group-append">
+                                <div class="input-group-text">Peso</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="input-group">
+                            <input type="number" class="form-control" placeholder="Ingrese los grados" id="anguloN3" value="0">
+                            <div class="input-group-append">
+                                <div class="input-group-text">Angulo</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="input-group">
+                            <input type="number" class="form-control" placeholder="Ingrese los grados" id="fCinetica" value="0">
+                            <div class="input-group-append">
+                                <div class="input-group-text">Uk</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center mt-5" id="respuestasNewton3">
+
+                        <p>Respuesta</p>
+                        <div class="container row" id="respuestasN3">
+
+                        </div>
+                    </div>
+        </form>
+        <div class="text-center">
+            <button type="button" id="limpiar" class="btn btn-outline-dark" onclick="location.reload()">Limpiar</button>
+            <button type="button" class="btn btn-outline-dark" id="calcularN3">Calcular</button>
+        </div>
         <div class="modal fade" id="perfil" tabindex="-1" aria-labelledby="perfilLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -132,6 +184,7 @@
                 </div>
             </div>
         </div>
+
     </main>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
