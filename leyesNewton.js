@@ -10,7 +10,7 @@ $('#limpiar').click(function() {})
 $(calcular).click(function() {
     const calcTension = (peso, angulo, opcion) => {
         let resultado = 0
-        if (opcion == 1) {
+        if (opcion == 1 || opcion == 4) {
             angulo = 90 - angulo
             resultado = (peso * Math.cos(toRadians(angulo)))
             console.log(resultado)
