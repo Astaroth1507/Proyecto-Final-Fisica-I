@@ -78,7 +78,7 @@ $(calcular).click(function() {
         if (anguloResultante < 0 && anguloResultante > -90) {
             return (anguloResultante) + 180
         } else if (anguloResultante > 0 && anguloResultante < 90) {
-            return (anguloResultante) + 90
+            return (anguloResultante)
         } else if (anguloResultante > -90 && anguloResultante > -180) {
             return (anguloResultante) + 270
         } else {

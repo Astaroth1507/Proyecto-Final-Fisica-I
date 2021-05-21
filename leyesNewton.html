@@ -34,7 +34,7 @@
                         <a class="nav-link" href="#">Leyes de newton</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="#">perfil</a>
+                        <a class="nav-link " href="#" data-toggle="modal" data-target="#perfil">perfil</a>
                     </li>
                 </ul>
             </div>
@@ -86,6 +86,43 @@
         <div class="text-center">
             <button type="button" id="limpiar" class="btn btn-outline-dark" onclick="location.reload()">Limpiar</button>
             <button type="button" class="btn btn-outline-dark" id="calcular">Calcular</button>
+        </div>
+        <div class="modal fade" id="perfil" tabindex="-1" aria-labelledby="perfilLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="perfilLabel">información</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container row">
+                            <div>
+                                <h4>Alexander Moisés Monterroso Cruz</h4>
+                            </div>
+                            <div>
+                                <h4>Carné: 3190-20-4601</h4>
+                            </div>
+                            <div>
+                                <h4>Sección "A"</h4>
+                            </div>
+                            <div>
+                                <h4>Correlativo #23</h4>
+                            </div>
+                            <div>
+                                <h4>Física I</h4>
+                            </div>
+                            <div>
+                                <h4>Ing. Allan Gilberto Villatoro Díaz</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
