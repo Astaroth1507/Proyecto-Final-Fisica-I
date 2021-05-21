@@ -22,7 +22,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Perfil</a>
+                        <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="conversiones.html">Conversiones</a>
@@ -32,6 +32,9 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Leyes de newton</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">perfil</a>
                     </li>
                 </ul>
             </div>
@@ -48,20 +51,35 @@
                         <div class="input-group-prepend">
                             <label class="input-group-text" for="cuadranteV1">Elija la variable que desea encontrar</label>
                         </div>
-                        <select class="custom-select" id="opciones" onchange="operacion()">
+                        <select class="custom-select" id="opciones">
                             <option selected hidden>ver opciones</option>
-                            <option value="1">W2</option>
-                            <option value="2">T</option>
-                            <option value="3">T2</option>
-                            <option value="4">T3</option>
-                            <option value="5">Ta</option>
-                            <option value="6">Tb</option>
-                            <option value="7">Ta, Tb</option>
-                            <option value="8">TAy</option>
-                            <option value="9">TBy</option>
+                            <option value="1">T</option>
+                            <option value="2">Tb</option>
+                            <option value="3">Ta</option>
                         </select>
                     </div>
-                    <div class="container row" id="inputs">
+                    <div class="col">
+                        <div class="input-group">
+                            <input type="number" class="form-control" placeholder="Ingrese los el peso" id="peso" value="0">
+                            <div class="input-group-append">
+                                <div class="input-group-text">Peso</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="input-group">
+                            <input type="number" class="form-control" placeholder="Ingrese los grados" id="angulo" value="0">
+                            <div class="input-group-append">
+                                <div class="input-group-text">Angulo</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center mt-5" id="respuestasNewton">
+
+                        <p>Respuesta</p>
+                        <div class="container row" id="respuestas">
+
+                        </div>
                     </div>
         </form>
         <div class="text-center">
