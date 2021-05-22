@@ -57,6 +57,8 @@ $(calcular).click(function() {
                 resultado = peso / 2
                 return resultado
             }
+        } else {
+            alert("No se puede calcular sin valores")
         }
     }
     let results = calcTension(pesoW.value, anguloG.value, masaG.value, opciones.value).toFixed(3)
